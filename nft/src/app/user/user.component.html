@@ -1,0 +1,65 @@
+<div class="User-box">
+    <h2>Please provide Details</h2>
+    <form [formGroup]="newTaskForm" novalidate="novalidate">
+        <label for="username"></label>
+        <input type="text" id="aesKey" name="aesKey" placeholder="aesKey" formControlName="aesKey" >
+        <span class="text-danger" *ngIf="newTaskForm.get('aesKey').invalid && (newTaskForm.get('aesKey').dirty || newTaskForm.get('aesKey').touched || newTaskForm.submitted) && newTaskForm.get('aesKey').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="chainCodeId" name="chainCodeId" placeholder="chainCodeId" formControlName="chainCodeId"><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('chainCodeId').invalid && (newTaskForm.get('chainCodeId').dirty || newTaskForm.get('chainCodeId').touched || newTaskForm.submitted) && newTaskForm.get('chainCodeId').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="courseName" name="courseName" placeholder="courseName" formControlName="courseName" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('courseName').invalid && (newTaskForm.get('courseName').dirty || newTaskForm.get('courseName').touched || newTaskForm.submitted) && newTaskForm.get('courseName').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="docType" name="docType" placeholder="docType" formControlName="docType"><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('docType').invalid && (newTaskForm.get('docType').dirty || newTaskForm.get('docType').touched || newTaskForm.submitted) && newTaskForm.get('docType').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="fName" name="fName" placeholder="fName" formControlName="fName" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('fName').invalid && (newTaskForm.get('fName').dirty || newTaskForm.get('fName').touched || newTaskForm.submitted) && newTaskForm.get('fName').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="itemCpyNum" name="itemCpyNum" placeholder="itemCpyNum" formControlName="itemCpyNum" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('itemCpyNum').invalid && (newTaskForm.get('itemCpyNum').dirty || newTaskForm.get('itemCpyNum').touched || newTaskForm.submitted) && newTaskForm.get('itemCpyNum').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="itemID" name="itemID" placeholder="itemID" formControlName="itemID" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('itemID').invalid && (newTaskForm.get('itemID').dirty || newTaskForm.get('itemID').touched || newTaskForm.submitted) && newTaskForm.get('itemID').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="itemImage" name="itemImage" placeholder="itemImage" formControlName="itemImage" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('itemImage').invalid && (newTaskForm.get('itemImage').dirty || newTaskForm.get('itemImage').touched || newTaskForm.submitted) && newTaskForm.get('itemImage').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="lName" name="lName" placeholder="lName" formControlName="lName" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('lName').invalid && (newTaskForm.get('lName').dirty || newTaskForm.get('lName').touched || newTaskForm.submitted) && newTaskForm.get('lName').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="name" name="name" placeholder="name" formControlName="name" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('name').invalid && (newTaskForm.get('name').dirty || newTaskForm.get('name').touched || newTaskForm.submitted) && newTaskForm.get('name').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="nftId" name="nftId" placeholder="nftId" formControlName="nftId" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('nftId').invalid && (newTaskForm.get('nftId').dirty || newTaskForm.get('nftId').touched || newTaskForm.submitted) && newTaskForm.get('nftId').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="nftOwner" name="nftOwner" placeholder="nftOwner" formControlName="nftOwner" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('nftOwner').invalid && (newTaskForm.get('nftOwner').dirty || newTaskForm.get('nftOwner').touched || newTaskForm.submitted) && newTaskForm.get('nftOwner').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="nftStatus" name="nftStatus" placeholder="nftStatus" formControlName="nftStatus" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('nftStatus').invalid && (newTaskForm.get('nftStatus').dirty || newTaskForm.get('nftStatus').touched || newTaskForm.submitted) && newTaskForm.get('nftStatus').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="nftURL" name="nftURL" placeholder="nftURL" formControlName="nftURL" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('nftURL').invalid && (newTaskForm.get('nftURL').dirty || newTaskForm.get('nftURL').touched || newTaskForm.submitted) && newTaskForm.get('nftURL').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="owner" name="owner" placeholder="owner" formControlName="owner" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('owner').invalid && (newTaskForm.get('owner').dirty || newTaskForm.get('owner').touched || newTaskForm.submitted) && newTaskForm.get('owner').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="price" name="price" placeholder="price" formControlName="price" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('price').invalid && (newTaskForm.get('price').dirty || newTaskForm.get('price').touched || newTaskForm.submitted) && newTaskForm.get('price').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="symbol" name="symbol" placeholder="symbol" formControlName="symbol" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('symbol').invalid && (newTaskForm.get('symbol').dirty || newTaskForm.get('symbol').touched || newTaskForm.submitted) && newTaskForm.get('symbol').errors?.required">Task Name can't be blank</span>
+
+        <input type="text" id="timeStamp" name="timeStamp" placeholder="timeStamp" formControlName="timeStamp" ><br>
+        <span class="text-danger" *ngIf="newTaskForm.get('timeStamp').invalid && (newTaskForm.get('timeStamp').dirty || newTaskForm.get('timeStamp').touched || newTaskForm.submitted) && newTaskForm.get('timeStamp').errors?.required">Task Name can't be blank</span>
+
+        <button (click)="onCreateTaskClick($event)" >Issue NFT</button><br><br><br><br><br><br><br><br><br><br><br>
+        <div>
+            <button >Back</button>       
+        </div>
+    </form>
+</div>
+

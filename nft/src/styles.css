@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: sans-serif;
+    background-color: rgb(108, 108, 230);
+    padding-right: 20px;
+    padding-top: 50px;
+}
+.Login-box {
+    width: 360px;
+    height: 500px;
+    background-color: rgb(206, 186, 225);
+    border-radius: 15px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-color: black;
+}
+.Signup-box {
+    width: 420px;
+    height: 600px;
+    background-color: none;
+    margin: auto;
+    border-color: black;
+    border-radius: 20px;
+}
+.User-box {
+    width: 420px;
+    height: 600px;
+    background-color: none;
+    margin: auto;
+    border-color: black;
+    border-radius: 20px;
+}
+h2 {
+    text-align: center;
+    padding-top: 30px;
+}
+form {
+    width: 300px;
+    margin-left: 20px;
+    height: 300px;
+}
+form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 25px;
+}
+
+input, button {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    float: left;
+    background-color: none;
+    font-size: 18px;
+    border-radius: 10px;
+    line-height: 20px;
+    font-variant: normal;
+}
+p{
+    text-align: center;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 15px;
+    margin: auto;
+
+}
+a{
+    font-size: auto;
+    text-align: center;
+    padding-left: 110px;
+    text-decoration-color: blue;
+}

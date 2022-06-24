@@ -1,0 +1,26 @@
+<div class="User-box">
+    <h2>Please provide NFT Details</h2>
+    <form action="/action_page.php">
+        <label for="username"></label>
+        <input type="text" id="username" name="username" placeholder="UserName" [(ngModel)]="validate.username" required>
+        <p style="color: red;" *ngIf="validationFlag && !validate.username">Username required</p>
+        <input type="text" id="firstname" name="firstname" placeholder="FirstName" [(ngModel)]="validate.firstname" required>
+        <p style="color: red;" *ngIf="validationFlag && !validate.firstname">Firstname required</p>
+        <input type="text" id="lastname" name="lastname" placeholder="LastName" [(ngModel)]="validate.lastname" required>
+        <p style="color: red;" *ngIf="validationFlag && !validate.lastname">Lastname required</p>
+        <input type="text" id="coursename" name="coursename" placeholder="CourseName" [(ngModel)]="validate.coursename" required>
+        <p style="color: red;" *ngIf="validationFlag && !validate.coursename">Coursename required</p>
+        <input type="text" id="url" name="url" placeholder="URL" [(ngModel)]="validate.url" required>
+        <p style="color: red;" *ngIf="validationFlag && !validate.url">URL required</p>
+        <input type="text" id="NFTid" name="NFTid" placeholder="NFT ID" [(ngModel)]="validate.nftid" required><br>
+        <p style="color: red;" *ngIf="validationFlag && !validate.nftid">NFT ID required</p>
+        <div>
+        <button (click)="popup()">Validate</button><br>
+
+        </div>
+        <div>
+            <button (click)="LogOut('login')">LogOut</button>
+        </div>
+        </form>
+</div>
+

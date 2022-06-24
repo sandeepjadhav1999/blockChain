@@ -1,0 +1,13 @@
+<div class="User-box">
+    <h2>Please provide NFT Details</h2>
+    <form action="/action_page.php">
+        <label for="userid"></label>
+        <input type="text" id="userid" name="userid" placeholder="UserID" [(ngModel)]="nft.userid" required>
+        <p style="color: red;" *ngIf="validationFlag && !nft.userid">UserID required</p>
+        <button (click)="RetrieveallNFTs('all-nfts1')">Retrieve All NFT</button><br><br><br><br><br><br><br>
+        <div>
+            <button (click)="back('userpage')">Back</button>
+        </div>
+    </form>
+</div>
+

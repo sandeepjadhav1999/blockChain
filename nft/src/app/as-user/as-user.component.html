@@ -1,0 +1,16 @@
+<div class="Login-box">
+    <h2>Login</h2>
+    <form action="/action_page.php">
+<label for="username"></label>
+        <input type="text" id="username" name="username" placeholder="Username" [(ngModel)]="userObj.userName" required>
+        <p style="color: red;" *ngIf="validationFalg && !userObj.userName">User name is required</p>
+        <input type="password" id="password" name="password" placeholder="Password" [(ngModel)]="userObj.userPassword" required><br>
+        <p style="color: red;" *ngIf="validationFalg && !userObj.userPassword">Password is required</p>
+        <button (click)="SignUp('userpage')">Sign Up</button><br><br><br><br><br><br><br><br><br>
+        <div>
+        <button (click)="back('login')">Back</button>
+        </div>        
+    </form>
+    <a [routerLink]="['/','signup']">Create New account</a>
+</div>
+
